@@ -7,8 +7,10 @@ gem 'rails', '3.2.11'
 
 gem 'pg'
 
+gem 'high_voltage'
 group :test, :development do
   gem 'rspec-rails'
+  gem 'capybara', '1.1.4'
 end
 
 
