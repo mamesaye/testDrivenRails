@@ -6,8 +6,8 @@ class ApplicationController < ActionController::Base
   end
   
   def current_user
-     openStruct.new(email: session[:current_email])
+     OpenStruct.new(email: session[:current_email])
   end
   
-  helper_method :current_user
+  helper_method :current_user #so view can interact with it
 end
